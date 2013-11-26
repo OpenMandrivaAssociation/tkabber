@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -x /usr/share/tkabber-plugins/ ]
+then
+export TKABBER_SITE_PLUGINS=/usr/share/tkabber-plugins
+fi
+exec /usr/share/tkabber/tkabber.tcl "$@"

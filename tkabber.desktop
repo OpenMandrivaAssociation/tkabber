@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Tkabber
+GenericName=Jabber client
+Comment=Talk over Jabber/XMPP
+Comment[ru]=Общайтесь через Jabber/XMPP
+Exec=tkabber
+Icon=tkabber
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;

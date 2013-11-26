@@ -1,0 +1,25 @@
+diff -up tkabber-0.11.1/Makefile tkabber-0.11.1-install/Makefile
+--- tkabber-0.11.1/Makefile	2009-10-31 22:35:20.490883000 +0600
++++ tkabber-0.11.1-install/Makefile	2010-11-05 17:33:04.910101730 +0600
+@@ -1,6 +1,6 @@
+ # $Id: Makefile 1849 2009-10-31 16:35:20Z sergei $
+ 
+-PREFIX = /usr/local
++PREFIX = /usr
+ TKABBERDIR = $(PREFIX)/share/tkabber
+ DOCDIR = $(PREFIX)/share/doc/tkabber
+ BINDIR = $(PREFIX)/bin
+@@ -33,13 +33,6 @@ install-bin:
+ 	cp -r *.tcl $(SUBDIRS) $(DESTDIR)$(TKABBERDIR)
+ 	chmod 755 $(DESTDIR)$(TKABBERDIR)/tkabber.tcl
+ 	chmod 755 $(DESTDIR)$(TKABBERDIR)/tkabber-remote.tcl
+-	mkdir -p $(DESTDIR)$(BINDIR)
+-	echo "#!/bin/sh" >$(DESTDIR)$(BINDIR)/tkabber
+-	echo "exec $(TKABBERDIR)/tkabber.tcl \"\$$@\"" >>$(DESTDIR)$(BINDIR)/tkabber
+-	echo "#!/bin/sh" >$(DESTDIR)$(BINDIR)/tkabber-remote
+-	echo "exec $(TKABBERDIR)/tkabber-remote.tcl \"\$$@\"" >>$(DESTDIR)$(BINDIR)/tkabber-remote
+-	chmod 755 $(DESTDIR)$(BINDIR)/tkabber
+-	chmod 755 $(DESTDIR)$(BINDIR)/tkabber-remote
+ 
+ install-doc: doc
+ 	mkdir -p $(DESTDIR)$(DOCDIR)
