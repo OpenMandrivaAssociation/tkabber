@@ -6,7 +6,7 @@ Version:	0.11.1
 Release:	0.%{svnrev}.1
 License:	GPLv2+
 Group:		Networking/Instant messaging
-Url:		http://tkabber.jabber.ru/
+Url:		https://tkabber.jabber.ru/
 Source0:	%{name}-%{version}.tar.bz2
 # for relase version:
 #Source0:	http://files.jabber.ru/tkabber/%{name}-%{version}.tar.gz
